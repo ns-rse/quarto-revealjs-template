@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "index.html#quarto-revealjs-slides",
+    "href": "index.html#quarto-revealjs-slides",
+    "title": "Template Revealjs Quarto site",
+    "section": "Quarto RevealJS Slides",
+    "text": "Quarto RevealJS Slides\nThis is a website Quarto website of RevealJS slides.\nThe template can be used as a starting point for your own slides and includes a number of different layouts and examples of Markdown syntax, slide layout, links, embedding images and configuration options."
+  },
+  {
+    "objectID": "index.html#formatting",
+    "href": "index.html#formatting",
+    "title": "Template Revealjs Quarto site",
+    "section": "Formatting",
+    "text": "Formatting\nQuarto slides are written in Markdown.\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics*, **bold**, ***bolditalics***\nitalics, bold, bold italics\n\n\nsuperscript^1^, subscript~2~\nsuperscript1, subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\ncode\ncode\n\n\n# Header 1\n\n\n\n## Header 2\n\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n\n\nSpeaker Notes can be added to each slide. Formatting can be used here too."
+  },
+  {
+    "objectID": "index.html#columns-and-lists",
+    "href": "index.html#columns-and-lists",
+    "title": "Template Revealjs Quarto site",
+    "section": "Columns and Lists",
+    "text": "Columns and Lists\nSlides can have columns and you can create lists of different types.\n\n\nUnordered…\n+ Learn Markdown\n+ Create Quarto Slides\n+ Publish on GitHub\n\nUnordered…\n\nLearn Markdown\nCreate Quarto Slides\nPublish on GitHub\n\n\n\n\nWe can create unordered lists."
+  },
+  {
+    "objectID": "index.html#columns-and-lists-cont.",
+    "href": "index.html#columns-and-lists-cont.",
+    "title": "Template Revealjs Quarto site",
+    "section": "Columns and Lists (cont.)",
+    "text": "Columns and Lists (cont.)\nSlides can have columns and you can create lists of different types.\n\n\nOrdered…\n1. A comes before\n2. B which is followed by\n3. C\n\nOrdered…\n\nA comes before\nB which is followed by\nC\n\n\n\n\nOr ordered lists."
+  },
+  {
+    "objectID": "index.html#tables",
+    "href": "index.html#tables",
+    "title": "Template Revealjs Quarto site",
+    "section": "Tables",
+    "text": "Tables\nYou can manually add tables.\n\n\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\nTables can be added, but there is a better way to include these programatically"
+  },
+  {
+    "objectID": "index.html#equations",
+    "href": "index.html#equations",
+    "title": "Template Revealjs Quarto site",
+    "section": "Equations",
+    "text": "Equations\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math $E = mc^{2}$\ninline math \\(E = mc^{2}\\)\n\n\ndisplay math: $$E = mc^{2}$$\ndisplay math: \\[E = mc^{2}\\]\n\n\n\n\nYou can write equations if you need to."
+  },
+  {
+    "objectID": "index.html#embed-images",
+    "href": "index.html#embed-images",
+    "title": "Template Revealjs Quarto site",
+    "section": "Embed Images",
+    "text": "Embed Images"
+  },
+  {
+    "objectID": "index.html#r-code",
+    "href": "index.html#r-code",
+    "title": "Template Revealjs Quarto site",
+    "section": "R code",
+    "text": "R code\n\nR code can be embeded and executed to produce tables and figures."
+  },
+  {
+    "objectID": "index.html#python-code",
+    "href": "index.html#python-code",
+    "title": "Template Revealjs Quarto site",
+    "section": "Python code",
+    "text": "Python code\nRequires you to load the reticulate library in R first.\n\nAs can Python code."
+  },
+  {
+    "objectID": "index.html#general-code",
+    "href": "index.html#general-code",
+    "title": "Template Revealjs Quarto site",
+    "section": "General code",
+    "text": "General code\nThere are lots of options for showing, hiding, highlighting code blocks."
+  },
+  {
+    "objectID": "index.html#the-documentation-is-good",
+    "href": "index.html#the-documentation-is-good",
+    "title": "Template Revealjs Quarto site",
+    "section": "The Documentation is Good",
+    "text": "The Documentation is Good\nThe official documentation is really good.\n\nGet Started\nMarkdown Basics\nGuide with many sections on Presentations Website, Books and more."
+  },
+  {
+    "objectID": "index.html#extensions",
+    "href": "index.html#extensions",
+    "title": "Template Revealjs Quarto site",
+    "section": "Extensions",
+    "text": "Extensions\n\n\nThere are an increasing number of Extensions for themes and other functionality such as QR codes or confetti (press c whilst viewing these slides 😉 ).\n\n\n\n    \n\n\n\n\nSlides : github-username.github.io/"
+  }
+]
