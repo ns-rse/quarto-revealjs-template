@@ -412,7 +412,7 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </section>
 <section id="quarto-revealjs-slides" class="slide level2">
 <h2>Quarto RevealJS Slides</h2>
-<p>This is a website <a href="https://quarto.org/">Quarto</a> website of <a href="https://revealjs.com/">RevealJS</a> slides.</p>
+<p>This is a <a href="https://quarto.org/">Quarto</a> template for creating <a href="https://revealjs.com/">RevealJS</a> slides.</p>
 <p>The template can be used as a starting point for your own slides and includes a number of different layouts and examples of Markdown syntax, slide layout, links, embedding images and configuration options.</p>
 </section>
 <section id="formatting" class="slide level2">
@@ -443,14 +443,6 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 <td style="text-align: left;"><code>code</code></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><code># Header 1</code></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><code>## Header 2</code></td>
-<td style="text-align: left;"></td>
-</tr>
-<tr class="odd">
 <td style="text-align: left;"><code>[Quarto](https://quarto.org)</code></td>
 <td style="text-align: left;"><a href="https://quarto.org">Quarto</a></td>
 </tr>
@@ -475,12 +467,12 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 <p>Slides can have columns and you can create <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">lists</a> of different types.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Unordered…</p>
+<p><strong>ToDo</strong> (code)</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="ss">+ </span>Learn Markdown</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="ss">+ </span>Create Quarto Slides</span>
 <span id="cb1-3"><a href="#cb1-3"></a><span class="ss">+ </span>Publish on GitHub</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<p>Unordered…</p>
+<p><strong>ToDo</strong> (Rendered)</p>
 <ul>
 <li>Learn Markdown</li>
 <li>Create Quarto Slides</li>
@@ -489,7 +481,7 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </div>
 </div>
 <aside class="notes">
-<p>We can create unordered lists.</p>
+<p>Slides can have columns and we can create unordered lists.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -504,15 +496,14 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </section>
 <section id="columns-and-lists-cont." class="slide level2">
 <h2>Columns and Lists (cont.)</h2>
-<p>Slides can have columns and you can create <a href="https://quarto.org/docs/authoring/markdown-basics.html#lists">lists</a> of different types.</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p>Ordered…</p>
+<p><strong>Ordered</strong> (code)</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="ss">1. </span>A comes before</span>
 <span id="cb2-2"><a href="#cb2-2"></a><span class="ss">2. </span>B which is followed by</span>
 <span id="cb2-3"><a href="#cb2-3"></a><span class="ss">3. </span>C</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<p>Ordered…</p>
+<p><strong>Ordered</strong> (Rendered)</p>
 <ol type="1">
 <li>A comes before</li>
 <li>B which is followed by</li>
@@ -627,6 +618,14 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </section>
 <section id="embed-images" class="slide level2">
 <h2>Embed Images</h2>
+<p><a href="https://quarto.org/docs/authoring/figures.html">Figures</a> can be embeded using a URL and resized.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="al">![Relaxing in the mountains](https://live.staticflickr.com/65535/53144704609_c5e6fa8c77_k.jpg)</span>{width=700}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="https://live.staticflickr.com/65535/53144704609_c5e6fa8c77_k.jpg" width="700"></p>
+<figcaption>Relaxing in the Julian Alps</figcaption>
+</figure>
+</div>
 <aside class="notes">
 
 <style type="text/css">
@@ -641,8 +640,55 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
           display:block!important;
       }</style></aside>
 </section>
+<section id="embed-images-cont." class="slide level2">
+<h2>Embed Images (<em>cont.</em>)</h2>
+<p>You can also include images locally.<sup>1</sup> and make them hyperlinks.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a>![<span class="co">[</span><span class="ot">OSC Sheffield</span><span class="co">](https://osc-international.com/osc-sheffield)</span>](img/OSC_Sheffield.png){width=300}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="img/OSC_Sheffield.png" width="300"></p>
+<figcaption><a href="https://osc-international.com/osc-sheffield">OSC Sheffield</a></figcaption>
+</figure>
+</div>
+<aside class="notes">
+
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+<aside><ol class="aside-footnotes"><li id="fn1"><p>Make sure to <code>git add</code> them otherwise they won’t publish</p></li></ol></aside></section>
 <section id="r-code" class="slide level2">
 <h2>R code</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p>Include <a href="https://quarto.org/docs/computations/r.html">R code and output</a> with automatic referencing (see <a href="#/r-code">Figure&nbsp;1</a>)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb6-2"><a href="#cb6-2"></a></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="fu">ggplot</span>(airquality, <span class="fu">aes</span>(Temp, Ozone)) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"loess"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-airquality2" class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/fig-airquality2-1.png" width="960"></p>
+<figcaption>Figure&nbsp;1: Temperature and ozone level.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
 <aside class="notes">
 <p><a href="https://www.r-project.org/">R</a> code can be embeded and executed to produce tables and figures.</p>
 <style type="text/css">
@@ -659,9 +705,48 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </section>
 <section id="python-code" class="slide level2">
 <h2>Python code</h2>
-<p>Requires you to load the <code>reticulate</code> library in R first.</p>
+<div class="column" style="width:50%;">
+<p>Include <a href="https://quarto.org/docs/computations/python.html">Python code and output</a> too</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="co">#| label: fig-polar</span></span>
+<span id="cb7-2"><a href="#cb7-2"></a><span class="co">#| fig-cap: "A line plot on a polar axis."</span></span>
+<span id="cb7-3"><a href="#cb7-3"></a><span class="co">#| warning: false</span></span>
+<span id="cb7-4"><a href="#cb7-4"></a><span class="co">#| eval: false</span></span>
+<span id="cb7-5"><a href="#cb7-5"></a><span class="co">#| echo: true</span></span>
+<span id="cb7-6"><a href="#cb7-6"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-7"><a href="#cb7-7"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb7-8"><a href="#cb7-8"></a></span>
+<span id="cb7-9"><a href="#cb7-9"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb7-10"><a href="#cb7-10"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb7-11"><a href="#cb7-11"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb7-12"><a href="#cb7-12"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>}</span>
+<span id="cb7-13"><a href="#cb7-13"></a>)</span>
+<span id="cb7-14"><a href="#cb7-14"></a>ax.plot(theta, r)</span>
+<span id="cb7-15"><a href="#cb7-15"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb7-16"><a href="#cb7-16"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb7-17"><a href="#cb7-17"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1"></a><span class="co">#| label: fig-polar2</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="co">#| fig-cap: "A line plot on a polar axis."</span></span>
+<span id="cb8-3"><a href="#cb8-3"></a><span class="co">#| warning: false</span></span>
+<span id="cb8-4"><a href="#cb8-4"></a><span class="co">#| eval: true</span></span>
+<span id="cb8-5"><a href="#cb8-5"></a><span class="co">#| echo: true</span></span>
+<span id="cb8-6"><a href="#cb8-6"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb8-7"><a href="#cb8-7"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb8-8"><a href="#cb8-8"></a></span>
+<span id="cb8-9"><a href="#cb8-9"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb8-10"><a href="#cb8-10"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb8-11"><a href="#cb8-11"></a>fig, ax <span class="op">=</span> plt.subplots(</span>
+<span id="cb8-12"><a href="#cb8-12"></a>  subplot_kw <span class="op">=</span> {<span class="st">'projection'</span>: <span class="st">'polar'</span>}</span>
+<span id="cb8-13"><a href="#cb8-13"></a>)</span>
+<span id="cb8-14"><a href="#cb8-14"></a>ax.plot(theta, r)</span>
+<span id="cb8-15"><a href="#cb8-15"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb8-16"><a href="#cb8-16"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb8-17"><a href="#cb8-17"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>::::</p>
 <aside class="notes">
-<p>As can <a href="https://www.python.org">Python</a> code.</p>
+<p>You can include <a href="https://www.python.org">Python</a> code too</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -676,7 +761,19 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </section>
 <section id="general-code" class="slide level2">
 <h2>General code</h2>
-<p>There are lots of options for showing, hiding, highlighting code blocks.</p>
+<p>There are lots of options for showing, hiding, highlighting <a href="https://quarto.org/docs/presentations/revealjs/#code-blocks">code blocks</a>.</p>
+<div class="sourceCode" id="cb9" data-code-line-numbers="6-8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a><span class="co">#| echo: true</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb9-4"><a href="#cb9-4"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb9-5"><a href="#cb9-5"></a></span>
+<span id="cb9-6"><a href="#cb9-6"></a>r <span class="op">=</span> np.arange(<span class="dv">0</span>, <span class="dv">2</span>, <span class="fl">0.01</span>)</span>
+<span id="cb9-7"><a href="#cb9-7"></a>theta <span class="op">=</span> <span class="dv">2</span> <span class="op">*</span> np.pi <span class="op">*</span> r</span>
+<span id="cb9-8"><a href="#cb9-8"></a>fig, ax <span class="op">=</span> plt.subplots(subplot_kw<span class="op">=</span>{<span class="st">'projection'</span>: <span class="st">'polar'</span>})</span>
+<span id="cb9-9"><a href="#cb9-9"></a>ax.plot(theta, r)</span>
+<span id="cb9-10"><a href="#cb9-10"></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
+<span id="cb9-11"><a href="#cb9-11"></a>ax.grid(<span class="va">True</span>)</span>
+<span id="cb9-12"><a href="#cb9-12"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="the-documentation-is-good" class="slide level2">
 <h2>The Documentation is Good</h2>
@@ -692,10 +789,16 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 <div class="columns">
 <div class="column" style="width:50%;">
 <p>There are an increasing number of <a href="https://quarto.org/docs/extensions/">Extensions</a> for themes and other functionality such as QR codes or confetti (press <code>c</code> whilst viewing these slides <span class="emoji" data-emoji="wink">😉</span> ).</p>
+<ul>
+<li><a href="https://quarto.org/docs/extensions/listing-filters.html">Shortcode/Filter</a></li>
+<li><a href="https://quarto.org/docs/extensions/listing-journals.html">Journal Articles</a></li>
+<li><a href="https://quarto.org/docs/extensions/listing-formats.html">Custom Formats</a></li>
+<li><a href="https://quarto.org/docs/extensions/listing-revealjs.html"><strong>RevealJS</strong></a></li>
+</ul>
 </div><div class="column" style="width:50%;">
 <div id="qrcode" class="qrcode"></div>
 <script type="text/javascript">
-var qrcode = new QRCode("qrcode", {"width":128,"colorLight":"#ffffff","height":128,"colorDark":"#000000","text":"https://ns-rse.github.io/quarto-revealjs-template"});
+var qrcode = new QRCode("qrcode", {"width":128,"colorLight":"#ffffff","text":"https://ns-rse.github.io/quarto-revealjs-template","colorDark":"#000000","height":128});
 </script>
     
 </div>
@@ -705,6 +808,7 @@ var qrcode = new QRCode("qrcode", {"width":128,"colorLight":"#ffffff","height":1
 <p><strong>Slides</strong> : <a href="https://github-username.github.io/%3Crepository%3E"><strong>github-username.github.io/<repository></repository></strong></a></p>
 </div>
 </section>
+
     </div>
   </div>
 
