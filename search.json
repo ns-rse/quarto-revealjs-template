@@ -3,8 +3,8 @@
     "objectID": "index.html#scan-this",
     "href": "index.html#scan-this",
     "title": "Template Revealjs Quarto site",
-    "section": "Scan This!",
-    "text": "Scan This!\n\n\n    \nns-rse.github.io/quarto-revealjs-template"
+    "section": "Scan This",
+    "text": "Scan This\n\n\n    \nns-rse.github.io/quarto-revealjs-template"
   },
   {
     "objectID": "index.html#quarto-revealjs-slides",
@@ -53,7 +53,7 @@
     "href": "index.html#embed-images",
     "title": "Template Revealjs Quarto site",
     "section": "Embed Images",
-    "text": "Embed Images\nFigures can be embeded using a URL and resized.\n![Relaxing in the mountains](https://live.staticflickr.com/65535/53144704609_c5e6fa8c77_k.jpg){width=700}\n\n\n\nRelaxing in the Julian Alps"
+    "text": "Embed Images\nFigures can be embeded using a URL and resized.\n![Relaxing in the Julian Alps](https://live.staticflickr.com/65535/53144704609_c5e6fa8c77_k.jpg){width=700}\n\n\n\nRelaxing in the Julian Alps"
   },
   {
     "objectID": "index.html#embed-images-cont.",
@@ -67,7 +67,7 @@
     "href": "index.html#r-code",
     "title": "Template Revealjs Quarto site",
     "section": "R code",
-    "text": "R code\n\n\nInclude R code and output with automatic referencing (see Figure 1)\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) +\n  geom_point() +\n  geom_smooth(method = \"loess\")\n\n\n\n\n\n\n\nFigure 1: Temperature and ozone level.\n\n\n\n\n\n\n\nR code can be embeded and executed to produce tables and figures."
+    "text": "R code\n\n\nInclude R code and output with automatic referencing (see Figure 1)\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) +\n  geom_point() +\n  geom_smooth(method = \"loess\")\n\n\n\n\n\n\n\n\n\n\nFigure 1: Temperature and ozone level.\n\n\n\n\n\n\n\n\nR code can be embeded and executed to produce tables and figures."
   },
   {
     "objectID": "index.html#python-code",
@@ -95,6 +95,6 @@
     "href": "index.html#extensions",
     "title": "Template Revealjs Quarto site",
     "section": "Extensions",
-    "text": "Extensions\n\n\nExtensions for themes and other functionality (press c whilst viewing these slides 😉 ).\n\nShortcode/Filter\nJournal Articles\nCustom Formats\nRevealJS\n\n\n\n\n    \n\n\n\n\nSlides : github-username.github.io/"
+    "text": "Extensions\n\n\nExtensions for themes and other functionality (press c whilst viewing these slides 😉 ).\n\nShortcode/Filter\nJournal Articles\nCustom Formats\nRevealJS\nawesome-quarto - Quarto tools & examples\n\n\nThis Template…\n\n\n    \n\n\n\n\n\nSlides : github-username.github.io/\n\n\n\n\n\n\n\n \n\n\nQuarto RevealJS Template"
   }
 ]
