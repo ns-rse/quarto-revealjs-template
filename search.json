@@ -25,21 +25,21 @@
     "href": "index.html#columns-and-lists",
     "title": "Template Revealjs Quarto site",
     "section": "Columns and Lists",
-    "text": "Columns and Lists\nSlides can have columns and you can create lists of different types.\n\n\nToDo (code)\n+ Learn Markdown\n+ Create Quarto Slides\n+ Publish on GitHub\n\nToDo (Rendered)\n\nLearn Markdown\nCreate Quarto Slides\nPublish on GitHub\n\n\n\n\nSlides can have columns and we can create unordered lists."
+    "text": "Columns and Lists\nSlides can have columns and you can create lists of different types.\n\n\nToDo (code)\n+ Learn Markdown\n+ Create Quarto Slides\n+ Publish on GitHub\n\nToDo (Rendered)\n\nLearn Markdown\nCreate Quarto Slides\nPublish on GitHub\n\n\n\nSlides can have columns and we can create unordered lists."
   },
   {
     "objectID": "index.html#columns-and-lists-cont.",
     "href": "index.html#columns-and-lists-cont.",
     "title": "Template Revealjs Quarto site",
     "section": "Columns and Lists (cont.)",
-    "text": "Columns and Lists (cont.)\n\n\nOrdered (code)\n1. A comes before\n2. B which is followed by\n3. C\n\nOrdered (Rendered)\n\nA comes before\nB which is followed by\nC\n\n\n\n\nOr ordered lists."
+    "text": "Columns and Lists (cont.)\n\n\nOrdered (code)\n1. A comes before\n2. B which is followed by\n3. C\n\nOrdered (Rendered)\n\nA comes before\nB which is followed by\nC\n\n\n\nOr ordered lists."
   },
   {
     "objectID": "index.html#tables",
     "href": "index.html#tables",
     "title": "Template Revealjs Quarto site",
     "section": "Tables",
-    "text": "Tables\nYou can manually add tables.\n\n\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\n\nTables can be added, but there is a better way to include these programatically"
+    "text": "Tables\nYou can manually add tables.\n\n\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\n\n\nTables can be added, but there is a better way to include these programatically"
   },
   {
     "objectID": "index.html#equations",
@@ -67,14 +67,14 @@
     "href": "index.html#r-code",
     "title": "Template Revealjs Quarto site",
     "section": "R code",
-    "text": "R code\n\n\nInclude R code and output with automatic referencing (see Figure 1)\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) +\n  geom_point() +\n  geom_smooth(method = \"loess\")\n\n\n\n\n\n\n\n\n\n\nFigure 1: Temperature and ozone level.\n\n\n\n\n\n\n\n\nR code can be embeded and executed to produce tables and figures."
+    "text": "R code\n\n\nInclude R code and output with automatic referencing (see Figure 1)\n\nlibrary(ggplot2)\n\nggplot(airquality, aes(Temp, Ozone)) +\n  geom_point() +\n  geom_smooth(method = \"loess\")\n\n\n\n\n\n\n\n\n\n\nFigure 1: Temperature and ozone level.\n\n\n\n\n\n\n\nR code can be embeded and executed to produce tables and figures."
   },
   {
     "objectID": "index.html#python-code",
     "href": "index.html#python-code",
     "title": "Template Revealjs Quarto site",
     "section": "Python code",
-    "text": "Python code\n\nInclude Python code and output too\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis.\"\n#| warning: false\n#| eval: false\n#| echo: true\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'}\n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n#| label: fig-polar2\n#| fig-cap: \"A line plot on a polar axis.\"\n#| warning: false\n#| eval: true\n#| echo: true\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'}\n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n::::\n\nYou can include Python code too"
+    "text": "Python code\n\nInclude Python code and output too\n#| label: fig-polar\n#| fig-cap: \"A line plot on a polar axis.\"\n#| warning: false\n#| eval: false\n#| echo: true\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'}\n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n#| label: fig-polar2\n#| fig-cap: \"A line plot on a polar axis.\"\n#| warning: false\n#| eval: true\n#| echo: true\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'}\n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n::::\n\nYou can include Python code too"
   },
   {
     "objectID": "index.html#general-code",
@@ -95,6 +95,6 @@
     "href": "index.html#extensions",
     "title": "Template Revealjs Quarto site",
     "section": "Extensions",
-    "text": "Extensions\n\n\nExtensions for themes and other functionality (press c whilst viewing these slides 😉 ).\n\nShortcode/Filter\nJournal Articles\nCustom Formats\nRevealJS\nawesome-quarto - Quarto tools & examples\n\n\nThis Template…\n\n\n    \n\n\n\n\n\nSlides : github-username.github.io/\n\n\n\n\n\n\n\n \n\n\nQuarto RevealJS Template"
+    "text": "Extensions\n\n\nExtensions for themes and other functionality (press c whilst viewing these slides 😉 ).\n\nShortcode/Filter\nJournal Articles\nCustom Formats\nRevealJS\nawesome-quarto - Quarto tools & examples\n\n\nThis Template…\n\n\n    \n\n\n\n\nSlides : github-username.github.io/\n\n\n\n\n\n\n\n \n\n\nQuarto RevealJS Template"
   }
 ]

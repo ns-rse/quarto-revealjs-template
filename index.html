@@ -12,10 +12,10 @@
 <link href="site_libs/quarto-contrib/reveal-header-1.0.0/add_header.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/grid-htext-1.0.0/grid_htext.css" rel="stylesheet">
 <script src="site_libs/quarto-contrib/qrcodejs-v1.0.0/qrcode.js"></script><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.551">
+  <meta name="generator" content="quarto-1.5.57">
 
   <meta name="author" content="Your Name">
-  <title></title>
+  <title>&lt;TITLE&gt; – Template Revealjs Quarto site</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -46,7 +46,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -74,7 +74,7 @@
     code span.at { color: #657422; } /* Attribute */
     code span.bn { color: #ad0000; } /* BaseN */
     code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
     code span.ch { color: #20794d; } /* Char */
     code span.cn { color: #8f5902; } /* Constant */
     code span.co { color: #5e5e5e; } /* Comment */
@@ -88,7 +88,7 @@
     code span.fu { color: #4758ab; } /* Function */
     code span.im { color: #00769e; } /* Import */
     code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
     code span.op { color: #5e5e5e; } /* Operator */
     code span.ot { color: #003b4f; } /* Other */
     code span.pp { color: #ad0000; } /* Preprocessor */
@@ -416,9 +416,14 @@ Your Name <a href="https://orcid.org/0000-0000-0000-0000" class="quarto-title-au
 </section>
 <section id="scan-this" class="slide level2">
 <h2>Scan This</h2>
-<div id="qr1" class="qrcode"></div>
+<div id="id=" "="" class="qrcode"></div>
 <script type="text/javascript">
-var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealjs-template>","colorLight":"#ffffff","colorDark":"#000000","width":"400","height":"400"});
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"width":"400","colorDark":"#000000","text":"<https://ns-rse.github.io/quarto-revealjs-template>","colorLight":"#ffffff","height":"400"});
+  script.remove();
+})();
 </script>
     
 <p><a href="https://ns-rse.github.io/quarto-revealjs-template" target="_blank">ns-rse.github.io/quarto-revealjs-template</a></p>
@@ -431,7 +436,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 <section id="formatting" class="slide level2">
 <h2>Formatting</h2>
 <p>Quarto slides are written in <a href="https://quarto.org/docs/authoring/markdown-basics.html" target="_blank">Markdown</a>.</p>
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Markdown Syntax</th>
@@ -491,8 +496,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 <li>Create Quarto Slides</li>
 <li>Publish on GitHub</li>
 </ul>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Slides can have columns and we can create unordered lists.</p>
 <style type="text/css">
@@ -522,8 +526,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 <li>B which is followed by</li>
 <li>C</li>
 </ol>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Or ordered lists.</p>
 <style type="text/css">
@@ -549,7 +552,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 <span id="cb3-4"><a></a>|  123  |  123 |   123   |   123  |</span>
 <span id="cb3-5"><a></a>|    1  |    1 |     1   |     1  |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: right;">Right</th>
@@ -579,8 +582,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 </tr>
 </tbody>
 </table>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p>Tables can be added, but there is a better way to include these programatically</p>
 <style type="text/css">
@@ -597,7 +599,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 </section>
 <section id="equations" class="slide level2">
 <h2>Equations</h2>
-<table>
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th style="text-align: center;">Markdown Syntax</th>
@@ -692,7 +694,7 @@ var qrcode = new QRCode("qr1", {"text":"<https://ns-rse.github.io/quarto-revealj
 </div><div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-airquality2" class="quarto-figure quarto-figure-center quarto-float">
+<div id="fig-airquality2" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-airquality2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img data-src="index_files/figure-revealjs/fig-airquality2-1.png" width="960">
@@ -704,8 +706,7 @@ Figure&nbsp;1: Temperature and ozone level.
 </div>
 </div>
 </div>
-</div>
-</div>
+</div></div>
 <aside class="notes">
 <p><a href="https://www.r-project.org/" target="_blank">R</a> code can be embeded and executed to produce tables and figures.</p>
 <style type="text/css">
@@ -741,8 +742,7 @@ Figure&nbsp;1: Temperature and ozone level.
 <span id="cb7-15"><a></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
 <span id="cb7-16"><a></a>ax.grid(<span class="va">True</span>)</span>
 <span id="cb7-17"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="column" style="width:50%;">
+</div><div class="column" style="width:50%;">
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="co">#| label: fig-polar2</span></span>
 <span id="cb8-2"><a></a><span class="co">#| fig-cap: "A line plot on a polar axis."</span></span>
 <span id="cb8-3"><a></a><span class="co">#| warning: false</span></span>
@@ -760,8 +760,7 @@ Figure&nbsp;1: Temperature and ozone level.
 <span id="cb8-15"><a></a>ax.set_rticks([<span class="fl">0.5</span>, <span class="dv">1</span>, <span class="fl">1.5</span>, <span class="dv">2</span>])</span>
 <span id="cb8-16"><a></a>ax.grid(<span class="va">True</span>)</span>
 <span id="cb8-17"><a></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>::::</p>
+</div><p>::::</p>
 <aside class="notes">
 <p>You can include <a href="https://www.python.org" target="_blank">Python</a> code too</p>
 <style type="text/css">
@@ -815,13 +814,17 @@ Figure&nbsp;1: Temperature and ozone level.
 </ul>
 </div><div class="column" style="width:30%;">
 <p>This Template…</p>
-<div id="qr2" class="qrcode"></div>
+<div id="id=" "="" class="qrcode"></div>
 <script type="text/javascript">
-var qrcode = new QRCode("qr2", {"text":"<https://ns-rse.github.io/quarto-revealjs-template>","colorLight":"#ffffff","colorDark":"#000000","width":"400","height":"400"});
+(function() {
+  var script = document.currentScript;
+  var qrcode = script.previousElementSibling;
+  qrcode.qrcode = new QRCode(qrcode, {"width":"400","colorDark":"#000000","text":"<https://ns-rse.github.io/quarto-revealjs-template>","colorLight":"#ffffff","height":"400"});
+  script.remove();
+})();
 </script>
     
-</div>
-</div>
+</div></div>
 
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
@@ -1128,18 +1131,7 @@ var qrcode = new QRCode("qr2", {"text":"<https://ns-rse.github.io/quarto-revealj
         }
         return false;
       }
-      const clipboard = new window.ClipboardJS('.code-copy-button', {
-        text: function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
-            }
-          }
-          return codeEl.innerText;
-        }
-      });
-      clipboard.on('success', function(e) {
+      const onCopySuccess = function(e) {
         // button target
         const button = e.trigger;
         // don't keep focus
@@ -1171,7 +1163,29 @@ var qrcode = new QRCode("qr2", {"text":"<https://ns-rse.github.io/quarto-revealj
         }, 1000);
         // clear code selection
         e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
       });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        // For code content inside modals, clipBoardJS needs to be initialized with a container option
+        // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
         var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
         var mailtoRegex = new RegExp(/^mailto:/);
           var filterRegex = new RegExp("https:\/\/<YOUR_GITHUB_USERNAME>\.github\.io\/<NAME_OF_REPOSITORY");
@@ -1179,7 +1193,7 @@ var qrcode = new QRCode("qr2", {"text":"<https://ns-rse.github.io/quarto-revealj
             return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
         // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
         for (var i=0; i<links.length; i++) {
           const link = links[i];
           if (!isInternal(link.href)) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://<YOUR_GITHUB_USERNAME>.github.io/<NAME_OF_REPOSITORY/index.html</loc>
-    <lastmod>2024-03-22T12:00:17.975Z</lastmod>
+    <loc>https://&lt;YOUR_GITHUB_USERNAME&gt;.github.io/&lt;NAME_OF_REPOSITORY/index.html</loc>
+    <lastmod>2024-09-22T14:23:32.025Z</lastmod>
   </url>
 </urlset>
