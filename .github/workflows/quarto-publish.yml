@@ -26,6 +26,7 @@ jobs:
           quarto add --no-prompt ArthurData/quarto-confetti
           quarto add --no-prompt davidwilby/openlinksinnewpage
           quarto add --no-prompt shafayetShafee/reveal-header
+          quarto add --no-prompt r-wasm/quarto-drop
 
       - name: Install Python and Dependencies
         uses: actions/setup-python@v4
