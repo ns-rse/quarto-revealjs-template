@@ -10,7 +10,7 @@ authors = [
 ]
 description = "Python packaging for including examples."
 readme = "README.md"
-license = "CC0 1.0 Universal"
+license = "CC0-1.0"
 license-files = ["LICENSE"]
 requires-python = ">=3.14"  # Match restrictions in place on TopoStats
 classifiers = [
