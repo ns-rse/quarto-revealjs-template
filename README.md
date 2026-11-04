@@ -153,8 +153,25 @@ but may need tweaking if you use any packages to manage a reproducible environme
 ### Python
 
 Similarly with Python you likely have Virtual Environments configured locally to run your Python code, and these should
-have be detailed in a `requirements.txt` file so they can be installed when the GitHub Workflow is executed to build
+be detailed in a `pyproject.toml` file so they can be installed when the GitHub Workflow is executed to build
 your pages on GitHub.
 
-You will need to enable installation of Python and these packages in the `.github/workflows/quarto-publish.yaml` and
-a sample section is already present that can be un-commented if required.
+#### `quarto-cli`
+
+One of the `dev`elopment group packages is [`quarto-cli`](https://pypi.org/project/quarto-cli/) a Python package that
+installs Quarto within your virtual environment.
+
+Thus if you do not have Quarto installed at the system level, or you just want to use an isolated version, you can
+install the Python package within your virtual environment with the `--group dev` option and `quarto` command will be
+available for you to use.
+
+An example of setting up a virtual environment with [`uv`](https://docs.astral.sh) and installing the package is.
+
+```shell
+uv venv
+source .venv/bin/activate   # This will differ on M$-Win systems
+uv pip install -e . --group dev
+# Check which quarto is being used and the version
+which quarto
+quarto --version
+```
