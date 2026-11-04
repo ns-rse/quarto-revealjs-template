@@ -1,0 +1,230 @@
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "quarto-revealjs"
+authors = [
+  { name = "Neil Shephard", email = "n.shephard@sheffield.ac.uk" },
+]
+description = "Python packaging for including examples."
+readme = "README.md"
+license = "CC0 1.0 Universal"
+license-files = ["LICENSE"]
+requires-python = ">=3.14"  # Match restrictions in place on TopoStats
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.14",
+  "Typing :: Typed",
+]
+dynamic = ["version"]
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "polars",
+]
+
+[project.urls]
+Homepage = "https://github.com/ns-rse/pytest-marks"
+"Bug Tracker" = "https://github.com/ns-rse/pytest-marks/issues"
+Discussions = "https://github.com/ns-rse/pytest-marks/discussions"
+Changelog = "https://github.com/ns-rse/pytest-marks/releases"
+
+
+[dependency-groups]
+tests = [
+  "pytest",
+  "pytest-cov",
+  "pytest-mpl",
+  "pytest-xdist",
+  "syrupy",
+]
+dev = [
+  {include-group = "tests"},
+  # {include-group = "docs"},
+  "black",
+  "codespell",
+  "ipdb",
+  "mypy",
+  "numpydoc",
+  "pre-commit",
+  "pydocstyle[toml]",
+  "pylint",
+  "pytest-testmon",
+  "quarto-cli",
+  "ruff",
+  "tomli",
+  "ty",
+]
+
+
+[tool.setuptools_scm]
+write_to = "src/pytest-marks/_version.py"
+
+
+[tool.pytest.ini_options]
+minversion = "9.1"
+addopts = [
+  "-ra",
+  "--mpl",
+  "--mpl-baseline-path=__mpl_snapshots__",
+  "--cov",
+  "--cov-branch",
+  "--showlocals",
+  "--strict-markers",
+  "--strict-config",
+  # "--numprocesses=logical"
+]
+markers = [
+  "slow: marks slow testes (deselect with '-m \"not slow\")",
+  "func: marks tests of functions (dselect with '-m \"not func\")",
+  "exceptions: marks tests of exceptions (dselect with '-m \"not exceptions\")",
+]
+xfail_strict = true
+filterwarnings = [
+  "error",
+]
+log_cli_level = "INFO"
+testpaths = [
+  "tests",
+]
+
+
+[tool.coverage]
+run.source = ["afmslicer"]
+report.exclude_also = [
+  '\.\.\.',
+  'if typing.TYPE_CHECKING:',
+]
+
+[tool.mypy]
+files = ["src", "tests"]
+python_version = "3.14"
+warn_unused_configs = true
+strict = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool"]
+warn_unreachable = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+# This should help resolve some of the typing issues that arise from using class inheritance of TopoStats
+# plugins = ["pydantic.mypy"]
+
+[[tool.mypy.overrides]]
+module = [
+]
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+ignore_missing_imports = true
+
+[tool.ruff]
+
+[tool.ruff.lint]
+extend-select = [
+  "ARG",      # flake8-unused-arguments
+  "B",        # flake8-bugbear
+  "C4",       # flake8-comprehensions
+  "EM",       # flake8-errmsg
+  "EXE",      # flake8-executable
+  "G",        # flake8-logging-format
+  "I",        # isort
+  "ICN",      # flake8-import-conventions
+  "NPY",      # NumPy specific rules
+  "PD",       # pandas-vet
+  "PGH",      # pygrep-hooks
+  "PIE",      # flake8-pie
+  "PL",       # pylint
+  "PT",       # flake8-pytest-style
+  "PTH",      # flake8-use-pathlib
+  "RET",      # flake8-return
+  "RUF",      # Ruff-specific
+  "SIM",      # flake8-simplify
+  "T20",      # flake8-print
+  "UP",       # pyupgrade
+  "YTT",      # flake8-2020
+]
+ignore = [
+  "PLR09",    # Too many <...>
+  "PLR2004",  # Magic value used in comparison
+  "G004",     # Logging statement uses f-string
+]
+isort.required-imports = ["from __future__ import annotations"]
+# Uncomment if using a _compat.typing backport
+# typing-modules = ["afmslicer._compat.typing"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["T20"]
+"noxfile.py" = ["T20"]
+"notebooks/**" = [
+  "B018",
+  "F841",
+  "PLC0415",
+  "PLR1711",
+  "T201",
+  "T203",
+]
+
+[tool.pylint.main]
+py-version = "3.11"
+ignore-paths = ["_version.py", "notebooks/"]
+ignore-patterns = ["^\\.#"]
+jobs = 0
+fail-under = 10.0
+suggestion-mode = true
+similarities.ignore-imports = "yes"
+messages_control.disable = [
+  "design",
+  "fixme",
+  "line-too-long",
+  "missing-module-docstring",
+  "missing-function-docstring",
+  "wrong-import-position",
+]
+
+
+[tool.numpydoc_validation]
+checks = [
+  "all", # Perform all check except those listed below
+  "ES01",
+  "EX01",
+  "PR10", # Conflicts with black formatting
+  "SA01",
+]
+exclude = [  # don't report on objects that match any of these regex
+    "\\.undocumented_method$",
+    "\\.__repr__$",
+    "^test_",
+    "^conftest",
+    "^conf$",
+    "noxfile*"
+]
+override_SS05 = [  # override SS05 to allow docstrings starting with these words
+    "^Process ",
+    "^Assess ",
+    "^Access ",
+]
+
+[tool.codespell]
+skip = 'uv.lock,./notebooks/*.py'
+count = ''
+quiet-level = 3
+ignore-words-list = [
+  'OT',
+]
+
+
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+[tool.hatch.build.targets.wheel]
+packages = ["src/quarto-revealjs"]
