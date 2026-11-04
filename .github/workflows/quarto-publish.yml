@@ -39,7 +39,7 @@ jobs:
       - name: Install package dependencies in activated environment
         shell: bash
         run: |
-          uv sync pip install -e . --group dev
+          uv pip install -e . --group dev
 
       - name: Install R
         uses: r-lib/actions/setup-r@v2
